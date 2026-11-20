@@ -1,0 +1,100 @@
+dashboard {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+}
+
+.live-status {
+  color: #16a34a;
+  font-size: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.stat-card h2 {
+  font-size: 30px;
+  margin: 15px 0 8px;
+}
+
+.stat-card span {
+  color: #16a34a;
+  font-size: 12px;
+}
+
+.skill-gap-section {
+  background: #191313;
+  padding: 28px;
+  margin-top: 30px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.skill-gap-section h2 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.skill-gap-section > p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.sector {
+  margin-bottom: 22px;
+
+}
+
+.sector-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  font-size: 14px;
+  color: #6087af;
+}
+
+.progress {
+  height: 9px;
+  background: #f7f7f8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+}
