@@ -17,9 +17,9 @@ function Home() {
           <a href="#about">About</a>
         </div>
 
-        <a href="#features" className="nav-button">
-          Explore Platform 
-        </a>
+<a href="/dashboard" className="explore-btn">
+  Explore Platform →
+</a>
       </nav>
 
       {/* Hero */}

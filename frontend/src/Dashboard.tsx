@@ -37,6 +37,42 @@ function Dashboard() {
           <h2>12.8 L</h2>
           <span>Illustrative placeholder</span>
         </div>
+<section className="employment-section">
+  <div className="employment-header">
+    <h2>National Employment Analytics</h2>
+    <span className="demo-badge">Demo Data</span>
+  </div>
+
+  <p className="employment-description">
+    Employment and workforce indicators across India.
+  </p>
+
+  <div className="employment-grid">
+    <div className="employment-card">
+      <p>Total Employment</p>
+      <h3>Demo</h3>
+      <span>Number of employed people</span>
+    </div>
+
+    <div className="employment-card">
+      <p>Unemployment Rate</p>
+      <h3>Demo</h3>
+      <span>Share of labour force unemployed</span>
+    </div>
+
+    <div className="employment-card">
+      <p>Labour Force Participation</p>
+      <h3>Demo</h3>
+      <span>Population participating in labour market</span>
+    </div>
+
+    <div className="employment-card">
+      <p>Worker Population Ratio</p>
+      <h3>Demo</h3>
+      <span>Population currently employed</span>
+    </div>
+  </div>
+</section>
 
       </section>
 
