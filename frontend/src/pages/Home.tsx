@@ -20,7 +20,7 @@ function Home() {
 <a href="/dashboard" className="explore-btn">
   Explore Platform →
 </a>
-      </nav>
+   </nav>
 
       {/* Hero */}
       <main id="home">
