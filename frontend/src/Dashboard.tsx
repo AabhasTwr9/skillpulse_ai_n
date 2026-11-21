@@ -70,6 +70,15 @@ function Dashboard() {
         </p>
         <IndiaSkillMap />
 
+        <div className="map-legend">
+  <span>Skill Gap Levels:</span>
+  <span>🟢 Low</span>
+  <span>🟡 Moderate</span>
+  <span>🟠 High</span>
+  <span>🔴 Critical</span>
+  <span>🔵 Selected</span>
+</div>
+
       </section>
 
       {/* Sector-wise Skill Gap Analysis */}
