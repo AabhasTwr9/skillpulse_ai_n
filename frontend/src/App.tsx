@@ -8,13 +8,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-<<<<<<< HEAD
         <Route
-  path="/demand"
-  element={<DemandForecasting />}
-/>
-=======
->>>>>>> 0a7c95faf63294d40fe77b5023acf577de47ca10
+          path="/demand"
+          element={<DemandForecasting />}
+        />
       </Routes>
     </BrowserRouter>
   );
