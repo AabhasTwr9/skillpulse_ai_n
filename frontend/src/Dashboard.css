@@ -134,3 +134,85 @@ dashboard {
   font-size: 14px;
   font-weight: 600;
 }
+
+.india-map-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 14px;
+  align-items: center;
+}
+
+.map-area {
+  width: 100%;
+  min-width: 0;
+}
+
+.map-area svg {
+  width: 100%;
+  height: auto;
+}
+
+.india-state {
+  cursor: pointer;
+  outline: none;
+  transition: fill 120ms ease;
+}
+
+.india-state:hover {
+  fill: #60a5fa;
+}
+
+.india-state:active {
+  fill: #1d4ed8;
+}
+
+.state-info {
+  padding: 20px;
+  background: #f5f7fb;
+  border-radius: 12px;
+}
+
+.state-info > span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.state-info h2 {
+  margin: 15px 0;
+}
+
+.state-info h1 {
+  color: #2563eb;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.state-info p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.skill-progress {
+  height: 9px;
+  background: #dbeafe;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.skill-progress div {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .india-map-container {
+    grid-template-columns: 1fr;
+  }
+}
