@@ -98,3 +98,15 @@ dashboard {
   background: #2563eb;
   border-radius: 10px;
 }
+
+.india-state {
+  cursor: pointer;
+}
+
+.india-state:hover {
+  fill: #93c5fd !important;
+}
+
+.india-state:focus:not(:focus-visible) {
+  outline: none;
+}
