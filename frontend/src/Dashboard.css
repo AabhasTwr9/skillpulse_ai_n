@@ -1,8 +1,8 @@
-.dashboard {
+dashboard {
   padding: 40px;
   min-height: 100vh;
-  background: #071225;
-  color: #f8fafc;
+  background: #f5f7fb;
+  color: #172033;
   font-family: Arial, sans-serif;
 }
 
@@ -16,19 +16,15 @@
 .dashboard-header h1 {
   font-size: 28px;
   margin-bottom: 8px;
-  color: #ffffff;
 }
 
 .dashboard-header p {
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .live-status {
-  color: #4ade80;
+  color: #16a34a;
   font-size: 14px;
-  background: rgba(74, 222, 128, 0.1);
-  padding: 10px 16px;
-  border-radius: 20px;
 }
 
 .stats-grid {
@@ -38,51 +34,48 @@
 }
 
 .stat-card {
-  background: linear-gradient(145deg, #102448, #0b1930);
+  background: white;
   padding: 25px;
-  border-radius: 16px;
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
 .stat-card p {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 14px;
 }
 
 .stat-card h2 {
   font-size: 30px;
   margin: 15px 0 8px;
-  color: #60a5fa;
 }
 
 .stat-card span {
-  color: #38bdf8;
+  color: #16a34a;
   font-size: 12px;
 }
 
 .skill-gap-section {
-  background: linear-gradient(145deg, #102448, #0b1930);
+  background: #191313;
   padding: 28px;
   margin-top: 30px;
-  border-radius: 16px;
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
 .skill-gap-section h2 {
   font-size: 21px;
   margin-bottom: 8px;
-  color: #60a5fa;
 }
 
 .skill-gap-section > p {
-  color: #94a3b8;
+  color: #64748b;
   margin-bottom: 25px;
 }
 
 .sector {
   margin-bottom: 22px;
+
 }
 
 .sector-info {
@@ -90,110 +83,18 @@
   justify-content: space-between;
   margin-bottom: 9px;
   font-size: 14px;
-  color: #cbd5e1;
+  color: #6087af;
 }
 
 .progress {
   height: 9px;
-  background: #1e293b;
+  background: #f7f7f8;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .progress div {
   height: 100%;
-  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  background: #2563eb;
   border-radius: 10px;
-}
-
-@media (max-width: 900px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .dashboard {
-    padding: 20px;
-  }
-
-  .dashboard-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.employment-section {
-  margin-top: 30px;
-}
-
-.employment-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-
-.employment-header h2 {
-  color: #60a5fa;
-  font-size: 22px;
-}
-
-.demo-badge {
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-}
-
-.employment-description {
-  color: #94a3b8;
-  margin: 12px 0 20px;
-}
-
-.employment-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.employment-card {
-  background: linear-gradient(145deg, #102448, #0b1930);
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid rgba(96, 165, 250, 0.2);
-}
-
-.employment-card p {
-  color: #94a3b8;
-  font-size: 14px;
-}
-
-.employment-card h3 {
-  color: #60a5fa;
-  font-size: 28px;
-  margin: 15px 0;
-}
-
-.employment-card span {
-  color: #94a3b8;
-  font-size: 12px;
-}
-
-@media (max-width: 900px) {
-  .employment-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .employment-grid {
-    grid-template-columns: 1fr;
-  }
 }
