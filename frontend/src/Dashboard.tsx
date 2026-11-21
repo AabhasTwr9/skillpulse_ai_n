@@ -1,8 +1,22 @@
  import "./Dashboard.css";
+ import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
     <div className="dashboard">
+      <nav className="dashboard-nav">
+  <Link to="/" className="dashboard-logo">
+    SkillPulse <span>AI</span>
+  </Link>
+
+  <div className="dashboard-nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#skill-gap">Skill Gap</a>
+    <a href="#forecast">Forecast</a>
+  </div>
+
+  <span className="dashboard-user">National Admin</span>
+</nav>
 
       <header className="dashboard-header">
         <div>

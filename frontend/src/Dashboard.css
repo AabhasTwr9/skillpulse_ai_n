@@ -98,3 +98,39 @@ dashboard {
   background: #2563eb;
   border-radius: 10px;
 }
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 25px;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.dashboard-logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #172033;
+}
+
+.dashboard-logo span {
+  color: #2563eb;
+}
+
+.dashboard-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.dashboard-nav-links a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.dashboard-user {
+  font-size: 14px;
+  font-weight: 600;
+}

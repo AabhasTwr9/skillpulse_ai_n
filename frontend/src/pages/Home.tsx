@@ -1,6 +1,8 @@
 import '../App.css'
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="app">
 
@@ -17,9 +19,12 @@ function Home() {
           <a href="#about">About</a>
         </div>
 
-        <a href="#features" className="nav-button">
-          Explore Platform 
-        </a>
+   <button
+  className="nav-button"
+  onClick={() => navigate("/dashboard")}
+>
+  Explore Platform
+</button>
       </nav>
 
       {/* Hero */}
@@ -45,9 +50,12 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#features" className="primary-button">
-                Explore Platform <span>→</span>
-              </a>
+             <button
+  className="primary-button"
+  onClick={() => navigate("/dashboard")}
+>
+  Explore Platform <span>→</span>
+</button>
 
               <a href="#about" className="secondary-button">
                 Discover SkillPulse
