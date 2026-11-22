@@ -1,8 +1,27 @@
+import { useEffect, useState } from "react";
 import "./Dashboard.css";
+
 import { Link } from "react-router-dom";
 import IndiaSkillMap from "./components/IndiaSkillMap";
 
 function Dashboard() {
+  const [backendStatus, setBackendStatus] = useState("Connecting...");
+
+useEffect(() => {
+  fetch("http://127.0.0.1:8000/api/status")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Backend connection failed");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      setBackendStatus(data.status);
+    })
+    .catch(() => {
+      setBackendStatus("Disconnected");
+    });
+}, []);
   return (
     <div className="dashboard">
 
@@ -28,7 +47,11 @@ function Dashboard() {
           <p>India's Workforce & Employment Overview</p>
         </div>
 
-        <span className="live-status">● Live Dashboard</span>
+        <span className={`live-status ${
+  backendStatus === "Operational" ? "connected" : "disconnected"
+}`}>
+  ● Backend: {backendStatus}
+</span>
       </header>
 
       {/* National Statistics */}

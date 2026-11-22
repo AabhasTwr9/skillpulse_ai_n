@@ -110,3 +110,11 @@ dashboard {
 .india-state:focus:not(:focus-visible) {
   outline: none;
 }
+
+.live-status.connected {
+  color: #16a34a;
+}
+
+.live-status.disconnected {
+  color: #dc2626;
+}
